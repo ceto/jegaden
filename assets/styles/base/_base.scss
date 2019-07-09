@@ -1,0 +1,15 @@
+html {
+    font-size: $font-globalsize * 0.875;
+
+    @include breakpoint($bp-large) {
+        font-size: $font-globalsize * 0.9375;
+    }
+
+    @include breakpoint($bp-xlarge) {
+        font-size: $font-globalsize;
+    }
+
+    @include breakpoint($bp-xxxlarge) {
+        font-size: $font-globalsize * 1.125;
+    }
+}

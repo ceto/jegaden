@@ -21,3 +21,14 @@
 
     // 5. Unhide native metabox
     add_filter('acf/settings/remove_wp_meta_box', '__return_false');
+
+    /** Create Options Pages */
+    if( function_exists('acf_add_options_page') ) {
+        acf_add_options_page(array(
+            'page_title' 	=> 'Globals',
+            'menu_title'	=> 'Globals',
+            'menu_slug' 	=> 'globals',
+            'capability'	=> 'edit_posts',
+            'redirect'		=> false
+        ));
+    }
