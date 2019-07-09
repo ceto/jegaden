@@ -1,0 +1,16 @@
+{
+    "name": "jegaden",
+    "homepage": "http://hydrogene.hu/sage/",
+    "authors": ["Gabor Szabo <szabogabi@gmail.com>"],
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "foundation-sites": "^6.5.3",
+        "motion-ui": "^2.0.3"
+    },
+    "overrides": {
+        "motion-ui": {
+            "main": ["dist/motion-ui.js", "src/motion-ui.scss"]
+        }
+    }
+}
