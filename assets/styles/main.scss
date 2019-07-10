@@ -14,7 +14,7 @@
 // Global styles
 @include foundation-global-styles;
 @include foundation-forms;
-//@include foundation-typography;
+@include foundation-typography;
 
 // Grids (choose one)
 @include foundation-xy-grid-classes;
@@ -71,3 +71,4 @@
 // @include motion-ui-animations;
 
 @import "base/base";
+@import "components/servicelist";
