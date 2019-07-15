@@ -1,0 +1,36 @@
+.testiblock {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.testipanel {
+    background-color: $cl-blue;
+    color: #fff;
+    padding: 5%;
+    margin: 1rem 1rem;
+    max-width: $layout-content * 0.75;
+    border-radius: 7px;
+
+    @include breakpoint($bp-large) {
+        margin: 1rem auto;
+    }
+}
+
+.testimonial {
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-size: 1.125rem;
+
+    p {
+        color: inherit;
+        font-style: italic;
+    }
+
+    cite {
+        color: inherit;
+        font-weight: $fw-bold;
+        font-style: italic;
+    }
+}

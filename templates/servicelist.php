@@ -1,4 +1,8 @@
+<div class="serviceblock ps ps--light ps--bordered">
+    <div class="grid-container">
 <h2>Services</h2>
+<p>Learn more about our services, click for details.</p>
+<br><br>
 <?php
     $servicecats = get_terms( array(
         'taxonomy' => 'servicecat',
@@ -37,3 +41,5 @@
 
     <?php endforeach; ?>
 </section>
+</div>
+</div>

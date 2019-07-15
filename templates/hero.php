@@ -1,10 +1,10 @@
-<section class="hero hero--notop">
+<section class="hero">
     <div class="hero__content">
-        <h2 class="hero__caption"><?php the_field('hero_caption'); ?>Lorem, ipsum dolor. </h2>
         <p class="hero__subcaption">
-            <?php the_field('hero_subcaption'); ?>Lorem ipsum dolor sit amet.
+            <?php the_field('hero_subcaption'); ?>Minimally Invasive and Robotic Surgery, Cardiac Valve Repair, Coronary bypass Surgery
         </p>
-        <a href="<?php the_field('hero_btntarget'); ?>" class="fauxbtn"><?php the_field('hero_btntext'); ?>Lorem, ipsum.</a>
+        <h2 class="hero__caption"><?php the_field('hero_caption'); ?>"An Experience you can trust"</h2>
+        <a href="<?php the_field('hero_btntarget'); ?>" class="hero__action"><?php the_field('hero_btntext'); ?>Read More</a>
     </div>
     <figure class="hero__fig">
         <?php if ( $image = get_field('hero_image') ) : ?>

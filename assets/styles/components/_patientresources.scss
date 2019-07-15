@@ -1,0 +1,51 @@
+.patientresources {
+    background-color: $cl-blue;
+    background-image: url(../images/sleepy.jpg);
+    //background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 4rem 0;
+    text-align: center;
+    //color: #fff;
+}
+
+.resourcelist {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    //max-width: $layout-content;
+
+    > li {
+        display: block;
+        padding: 0.5em 1.5%;
+        width: 30rem;
+    }
+}
+
+.rescard {
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba($cl-blue, 0.95) 0, rgba($cl-blue-light, 0.85));
+    color: #fff;
+    padding: 2rem 7.5% 1rem;
+    border-radius: 7px;
+    line-height: 1.5;
+}
+
+.rescard__title {
+    font-size: 1.5rem;
+}
+
+.rescard__text {
+    line-height: 1.2;
+    font-size: 0.9275rem;
+}
+
+.rescard__more {
+    @extend .hero__action;
+
+    font-size: 0.75rem;
+}

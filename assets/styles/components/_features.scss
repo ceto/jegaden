@@ -1,0 +1,39 @@
+.featuresblock {
+    background-color: $cl-blue;
+    background-image: linear-gradient(180deg, $cl-blue-light 0, $cl-blue-silver 100%);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.featurelist {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: $layout-content;
+
+    > li {
+        display: block;
+        padding: 0.5em 0;
+        width: 20rem;
+    }
+}
+
+.featcard {
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+}
+
+.featcard__icon {
+    width: 30%;
+    display: inline-block;
+    margin: 0 auto 0;
+}
+
+.featcard__text {
+    font-size: 1.5rem;
+    line-height: 1.2;
+}

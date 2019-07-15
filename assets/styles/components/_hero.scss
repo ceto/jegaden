@@ -6,12 +6,12 @@
     margin: 0 auto;
     width: 100%;
     background-color: $cl-body-font-color;
-    background-image: url(../images/homehero.jpg);
+    background-image: linear-gradient(0deg, rgba(#fff, 0.5) 0, rgba(#fff, 0.75) 100%), url(../images/homehero.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center top;
-    color: $cl-gray-light;
+    background-position: center center;
+    color: $cl-body-font-color;
     padding: calc(3rem + 2.5vw) 0 0 1rem;
     // background-color: $c-secondary;
     // background-image: linear-gradient(
@@ -20,10 +20,10 @@
     //     lighten($c-secondary, 2%) 60%,
     //     lighten($c-secondary, 2%) 100%
     // );
-    //color: $white;
+    // color: $white;
 
     @include breakpoint($bp-tablet) {
-        grid-template-columns: 1fr 25% 1fr;
+        grid-template-columns: 1fr 3.125% 1fr;
         //padding-right: 1rem;
     }
 
@@ -35,7 +35,7 @@
     @include breakpoint($bp-large) {
         padding-left: 10rem;
         padding-right: 10rem;
-        min-height: calc(100vh - 7.5rem);
+        min-height: calc(100vh - 15rem);
     }
 
     @include breakpoint($bp-xlarge) {
@@ -103,10 +103,11 @@
 }
 
 p.hero__subcaption {
-    font-size: 1.25em;
+    font-size: 1em;
     line-height: 1.4;
-    font-weight: $global-weight-bold;
+    font-weight: $fw-bold;
     font-family: $header-font-family;
+    color: $cl-blue;
 
     a {
         @extend .fauxbtn;
@@ -118,9 +119,10 @@ p.hero__subcaption {
 }
 
 .hero__caption {
-    font-size: 1.75em;
+    font-size: 1.333em;
     letter-spacing: 0.0875em;
-    text-transform: uppercase;
+    font-weight: $fw-normal;
+    //text-transform: uppercase;
     line-height: 1.25em;
     margin: 0 0 1em;
     //color: $cl-blue;
@@ -159,46 +161,16 @@ p.hero__subcaption {
     }
 }
 
-.hero--swap {
-    padding: calc(3rem + 2.5vw) 1rem calc(3rem + 2.5vw) 0;
-
-    @include breakpoint($bp-tablet) {
-        padding-left: 6rem;
-        padding-right: 2rem;
-    }
-
-    @include breakpoint($bp-large) {
-        padding-left: 10rem;
-        padding-right: 10rem;
-    }
-
-    @include breakpoint($bp-xlarge) {
-        padding-left: calc(50vw - #{$global-width/2});
-        padding-right: calc(50vw - #{$global-width/2});
-    }
-
-    .hero__content {
-        grid-column: 1 / span 3;
-        padding-right: 0;
-        padding-left: 15%;
-
-        @include breakpoint($bp-tablet) {
-            grid-column: 2 / span 2;
-            padding-left: 10%;
-        }
-    }
-
-    .hero__fig {
-        grid-column: 1 / span 2;
-
-        img {
-            //border-right-width: 0.4333rem;
-            //border-left-width: 0;
-            object-position: 80% 50%;
-
-            @include breakpoint($bp-tablet) {
-                //border-width: 0.5rem;
-            }
-        }
-    }
+.hero__action {
+    display: inline-block;
+    background-color: $cl-blue;
+    color: #fff;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    line-height: 1;
+    padding: 0.75em 1em;
+    font-size: 0.875rem;
+    min-width: 12em;
+    text-align: center;
 }

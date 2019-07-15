@@ -13,3 +13,21 @@ html {
         font-size: $font-globalsize * 1.125;
     }
 }
+
+.textlogo {
+    color: $body-font-color;
+    display: inline-block;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    text-align: center;
+    line-height: 1.2;
+    //border: 1px solid #cacaca;
+    width: 20.25em;
+
+    span {
+        display: block;
+        font-weight: $fw-normal;
+        font-size: 0.75em;
+    }
+}

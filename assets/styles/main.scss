@@ -22,7 +22,7 @@
 // @include foundation-flex-grid;
 
 // // Generic components
-// @include foundation-button;
+@include foundation-button;
 // @include foundation-button-group;
 // @include foundation-close-button;
 // @include foundation-label;
@@ -71,5 +71,10 @@
 // @include motion-ui-animations;
 
 @import "base/base";
+@import "components/banner";
+@import "layouts/ps";
 @import "components/servicelist";
 @import "components/hero";
+@import "components/features";
+@import "components/testimonials";
+@import "components/patientresources";
