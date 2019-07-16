@@ -6,7 +6,7 @@
                 <span>Cardiac Surgeon Professor of Cardiac Surgery</span>
             </div>
         </a>
-        <nav class="banner_nav">
+        <nav class="banner__nav">
             <ul class="mainmenu">
                 <li><a href="">Services</a></li>
                 <li><a href="">Profile</a></li>

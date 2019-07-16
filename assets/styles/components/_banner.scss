@@ -5,26 +5,68 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+
+    > * {
+        width: 100%;
+        font-size: 0.875rem;
+
+        @include breakpoint($bp-tablet) {
+            width: auto;
+        }
+    }
 }
 
 .banner__brand {
     display: block;
 }
 
+.textlogo {
+    color: $body-font-color;
+    display: inline-block;
+    font-size: 1.125em;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    text-align: center;
+    line-height: 1.2;
+    //border: 1px solid #cacaca;
+    width: 20.25em;
+
+    span {
+        display: block;
+        font-weight: $fw-normal;
+        font-size: 0.75em;
+    }
+}
+
+.banner__nav {
+    flex-grow: 2;
+}
+
 .mainmenu {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0.75em 0;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 
     > li {
+        margin: 0 1%;
+
         a {
             display: inline-block;
-            padding: 0.5em 0.75em;
+            padding: 0.25em 0.25em;
+            white-space: nowrap;
             color: inherit;
             text-transform: uppercase;
+            line-height: 1;
         }
     }
+}
+
+.banner__actions {
+    line-height: 1;
+    font-weight: $fw-bold;
+    font-size: 1.125em;
 }

@@ -4,5 +4,6 @@
   <?php get_template_part('templates/testimonials'); ?>
   <?php get_template_part('templates/servicelist'); ?>
   <?php get_template_part('templates/patientresources'); ?>
+  <?php get_template_part('templates/placeswherework'); ?>
   <?php //get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>

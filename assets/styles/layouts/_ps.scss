@@ -84,8 +84,8 @@
 }
 
 .ps--light {
-    border-color: scale-color($cl-gray-light, $lightness: 70%);
-    background-color: scale-color($cl-gray-light, $lightness: 80%);
+    border-color: scale-color(#000, $lightness: 95%);
+    background-color: scale-color(#000, $lightness: 97%);
 }
 
 .ps--accent {
