@@ -35,7 +35,7 @@
     @include breakpoint($bp-large) {
         padding-left: 6.25%;
         padding-right: 6.25%;
-        min-height: calc(100vh - 15rem);
+        //min-height: calc(100vh - 15rem);
     }
 
     @include breakpoint($bp-xlarge) {
@@ -138,12 +138,13 @@ p.hero__subcaption {
     img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        //object-position: 20% 50%;
+        object-fit: contain;
+        object-position: right bottom;
         //border: 0.4333rem solid $cl-blue;
         //border-right-width: 0;
         //mix-blend-mode: multiply;
         //filter: grayscale(0.75) brightness(200%);
+        max-width: 26rem;
 
         @include breakpoint($bp-tablet) {
             //border-width: 0.5rem;

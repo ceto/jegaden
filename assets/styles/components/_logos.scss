@@ -1,0 +1,23 @@
+.clientlogo {
+    position: relative;
+    height: 0;
+    //background-color: red;
+    margin: 0 0 10%;
+    padding: 0 0 66.666%;
+
+    > img {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        left: 50%;
+        width: 100%;
+        max-width: 60%;
+        //max-height: 90%;
+
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    figcaption {
+        display: none;
+    }
+}
