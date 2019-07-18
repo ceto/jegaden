@@ -83,6 +83,12 @@
     background-color: $dark-gray;
 }
 
+.ps--darkgradient {
+    background-color: $cl-blue;
+    background-image: linear-gradient(180deg, $cl-blue-light 0, $cl-blue-silver 100%);
+    color:#fff;
+}
+
 .ps--light {
     border-color: scale-color(#000, $lightness: 95%);
     background-color: scale-color(#000, $lightness: 97%);

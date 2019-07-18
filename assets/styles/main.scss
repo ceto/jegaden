@@ -71,6 +71,7 @@
 // @include motion-ui-animations;
 
 @import "base/base";
+@import "base/typography";
 @import "components/banner";
 @import "layouts/ps";
 @import "components/servicelist";
@@ -80,3 +81,4 @@
 @import "components/patientresources";
 @import "components/placeswherework";
 @import "components/logos";
+@import "components/contactblock";

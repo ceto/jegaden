@@ -20,5 +20,5 @@
             </div>
         </li>
     </ul>
-    <a href="#" class="hero__action">Full Profile</a>
+    <a href="#" class="button">Full Profile</a>
 </section>

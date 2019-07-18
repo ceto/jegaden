@@ -1,70 +1,29 @@
-h1,
-h2,
-h3,
-h4,
-h6 {
-    font-family: $mitoserif;
-    font-weight: $global-weight-normal;
-    margin: 0 0 0.5em;
-    line-height: 1.2;
-}
-
-h1 {
-    font-size: 2.25rem;
-}
-
-p {
-    margin-top: 0;
-    margin-bottom: 1em;
-}
-
-.subtitle {
-    font-family: $mitosans;
-    text-transform: uppercase;
-    font-weight: $global-weight-bold;
-    margin: 0 0 0.5em;
-    font-size: 0.875rem;
-    font-size: 1rem;
-}
-
-.lead,
-.lead p {
-    font-size: 1.125rem;
-    line-height: 1.6;
-    font-family: $mitoserif;
-}
-
-.readmore {
-    display: inline-block;
-    border-bottom: 1px dashed $cl-green;
-    font-weight: $global-weight-bold;
-    color: inherit;
-    font-style: italic;
-    text-decoration: none;
-    font-size: 0.875em;
-    //text-transform: uppercase;
-}
-
-.textserif,
-.textserif p {
-    font-family: $mitoserif;
-}
-
-hr {
-    margin: 1rem auto;
-    max-width: $layout-content;
-    height: 0;
-    border: none;
-    border-top: 1px solid lighten(#000, 92%);
-    border-bottom: 1px solid lighten(#000, 98%);
-}
-
-.button {
-    border-radius: 5px;
-}
-
 .svg.icon {
     width: 1em;
     height: 1em;
     fill: currentColor;
+}
+
+.textlogo {
+    color: $body-font-color;
+    display: inline-block;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    font-weight: $fw-bold;
+    text-align: center;
+    line-height: 1.2;
+    //border: 1px solid #cacaca;
+    width: 20.25em;
+
+    span {
+        display: block;
+        font-weight: $fw-normal;
+        font-size: 0.75em;
+    }
+}
+
+.button {
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    min-width: 12em;
 }
