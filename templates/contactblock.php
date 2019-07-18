@@ -1,6 +1,7 @@
 <section class="contactblock ps ps--darkgradient text-center">
 
     <h2>Contact</h2>
+    <br>
 
     <form id="contact_form" class="contactform" action="<?= get_template_directory_uri(); ?>/contact_me.php" method="post" data-abide novalidate>
       <div class="grid-x grid-margin-x">
@@ -8,12 +9,10 @@
           <label for="message_name">
           Name
             <input type="text" required placeholder="Add Your name" id="message_name" name="message_name" value="<?php echo $_POST['message_name']; ?>">
-            <small class="form-error">Name is required</small>
           </label>
           <label for="message_email">
           E-mail
             <input type="email" required placeholder="E-mail address" id="message_email" name="message_email" value="<?php echo $_POST['message_email']; ?>">
-            <small class="form-error">E-mail is required</small>
           </label>
           <label for="message_phone">
           Telephone
@@ -24,7 +23,6 @@
           <label for="message_text">
           How can I help You?
             <textarea required placeholder="" rows="9" id="message_text" name="message_text"><?php if ($_POST['message_text']!='') { echo $_POST['message_text']; }?></textarea>
-            <small class="form-error">Required field</small>
           </label>
         </div>
       </div>
