@@ -8,9 +8,18 @@
         </div>
     </div>
     <ul class="sitebottom__icons">
-        <li><a href="#">Dubai, Sample avn 12-34</a></li>
-        <li><a href="#">(971) 1234 9880</a></li>
-        <li><a href="#">hello@drjegeden.ae</a></li>
+        <li><a href="#">
+            <svg class="icon"><use xlink:href="#icon-mapmarker"></use></svg>
+            Dubai, Sample avn 12-34
+        </a></li>
+        <li><a href="#">
+            <svg class="icon"><use xlink:href="#icon-phone"></use></svg>
+            (971) 1234 9880
+        </a></li>
+        <li><a href="#">
+            <svg class="icon"><use xlink:href="#icon-emailchat"></use></svg>
+            hello@drjegeden.ae
+        </a></li>
     </ul>
 </aside>
 <footer class="sitefooter">

@@ -1,9 +1,12 @@
 .sitebottom {
+    padding: 4rem 0;
 }
 
 .sitebottom__brand {
     margin: 0 auto;
     text-align: center;
+    font-size: 1.25rem;
+    margin: 0 auto 2.5%;
 }
 
 .sitebottom__icons {
@@ -11,22 +14,46 @@
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    text-align: center;
 
     > li {
+        display: block;
+        padding: 1rem;
+        margin: 1rem 2.5%;
+        max-width: 14rem;
+
+        a {
+            &:hover,
+            &:focus {
+                // color: scale-color($cl-blue, -30%);
+            }
+        }
+    }
+
+    svg {
+        display: block;
+        margin: 0 auto 0.5rem auto;
+        stroke: currentColor;
+        fill: currentColor;
+        //width: 3rem;
+        width: 100%;
+        height: 3.5rem;
     }
 }
 
 .sitefooter {
     background-color: black;
     color: #fff;
+    font-size: 0.875rem;
 }
 
 .sitefooter__inner {
     max-width: $layout-content;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0.75rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
