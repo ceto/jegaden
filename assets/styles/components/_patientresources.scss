@@ -8,6 +8,11 @@
     padding: 4rem 0;
     text-align: center;
     //color: #fff;
+
+    > .grid-container > h2 {
+        color: darken($cl-blue, 20%);
+        text-shadow: 0 0 0.5em rgba(#fff, 0.75);
+    }
 }
 
 .resourcelist {
@@ -30,7 +35,7 @@
     text-align: center;
     background-image: linear-gradient(180deg, rgba($cl-blue, 0.95) 0, rgba($cl-blue-light, 0.85));
     color: #fff;
-    padding: 2rem 7.5% 1rem;
+    padding: 2rem 7.5% 2rem;
     border-radius: 7px;
     line-height: 1.5;
 }
@@ -45,7 +50,6 @@
 }
 
 .rescard__more {
-    @extend .hero__action;
-
     font-size: 0.75rem;
+    margin: 0;
 }
