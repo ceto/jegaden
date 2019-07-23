@@ -32,7 +32,7 @@
         <ul class="servicelist">
         <?php while ($the_services->have_posts()) : $the_services->the_post(); ?>
             <?php setup_postdata( $post ); ?>
-            <li><a href="#"><?php the_title(); ?></a></li>
+            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
         <?php endwhile; ?>
         </ul>
         <?php wp_reset_postdata(); ?>
