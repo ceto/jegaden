@@ -13,3 +13,7 @@ html {
         font-size: $font-globalsize * 1.125;
     }
 }
+
+.grid-container--narrow {
+    max-width: $layout-content * 0.75;
+}

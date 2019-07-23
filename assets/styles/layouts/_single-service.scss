@@ -1,0 +1,7 @@
+.theservice__section {
+    &:nth-child(2n + 1) {
+        background-color: $cl-gray-xlight;
+        border-top: 1px solid darken($cl-gray-xlight, 3%);
+        border-bottom: 1px solid darken($cl-gray-xlight, 3%);
+    }
+}

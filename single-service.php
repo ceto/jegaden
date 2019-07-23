@@ -1,19 +1,31 @@
 <?php while (have_posts()) : the_post(); ?>
-    <?php get_template_part('templates/service', 'header'); ?>
-    <div class="ps">
-        <div class="grid-container grid-container--narrow">
-            <div class="grid-x grid-margin-x align-center">
-                <div class="cell">
+    <article class="theservice">
+        <?php get_template_part('templates/service', 'header'); ?>
+        <section class="ps theservice__section">
+            <div class="grid-container grid-container--narrow">
+                <div class="copywrite">
                     <?php if (has_excerpt()) : ?>
                     <div class="lead"><?php the_excerpt() ?></div>
                     <?php endif; ?>
-                    <div class="copy">
-                        <?php the_content(); ?>
-                    </div>
+
+                    <?php the_content(); ?>
                 </div>
             </div>
-        </div>
-    </div>
+        </section>
+        <?php if( have_rows('sections') ): ?>
+        <?php while ( have_rows('sections') ) : the_row(); ?>
+        <section class="ps theservice__section">
+            <div class="grid-container grid-container--narrow">
+                <div class="copywrite">
+                    <?php the_sub_field('content'); ?>
+                </div>
+            </div>
+        </section>
+        <?php endwhile; ?>
+    </article>
+
+<?php endif; ?>
+
 
 
 <?php endwhile; ?>
