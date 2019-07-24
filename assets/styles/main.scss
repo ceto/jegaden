@@ -42,7 +42,7 @@
 // // Containers
 // @include foundation-accordion;
 // @include foundation-media-object;
-// @include foundation-orbit;
+@include foundation-orbit;
 // @include foundation-responsive-embed;
 // @include foundation-tabs;
 // @include foundation-thumbnail;
@@ -67,8 +67,8 @@
 // // @include foundation-prototype-classes;
 
 // // Motion UI
-// @include motion-ui-transitions;
-// @include motion-ui-animations;
+@include motion-ui-transitions;
+@include motion-ui-animations;
 
 @import "base/base";
 @import "base/typography";
