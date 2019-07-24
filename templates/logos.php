@@ -1,6 +1,6 @@
-<div class="grid-container ps">
-    <div class="grid-x">
-        <div class="cell">
+<div class="ps">
+    <div class="grid-container grid-container--xnarrow">
+
             <div class="grid-x grid-margin-x small-up-3 large-up-5 align-center">
                 <?php $i=0; ?>
                 <?php // while ( have_rows('cl_logos', 'options') ) : the_row(); ?>
@@ -108,6 +108,5 @@
 
                 <?php //endwhile; ?>
             </div>
-        </div>
     </div>
 </div>

@@ -12,12 +12,19 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    max-width: $layout-content;
+
+    @include breakpoint(tablet) {
+        justify-content: space-between;
+    }
 
     > li {
         display: block;
         padding: 0.5em 0;
-        width: 20rem;
+        width: 18rem;
+
+        @include breakpoint(tablet) {
+            width: 33.333%;
+        }
     }
 }
 
@@ -34,6 +41,6 @@
 }
 
 .featcard__text {
-    font-size: 1.5rem;
+    font-size: 1.333rem;
     line-height: 1.2;
 }

@@ -1,7 +1,7 @@
 <?php use Roots\Sage\Titles; ?>
 
-<div class="pagehead pagehead--service pagehead--narrow">
-    <div class="pagehead__content">
+<div class="pagehead pagehead--service">
+    <div class="pagehead__content grid-container grid-container--xnarrow">
         <h1 class="pagehead__title"><?= Titles\title(); ?></h1>
     </div>
     <figure class="pagehead__fig">

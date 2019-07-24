@@ -1,5 +1,5 @@
 <section class="contactblock ps ps--darkgradient text-center">
-
+    <div class="grid-container grid-container--xnarrow">
     <h2>Contact</h2>
     <br>
 
@@ -22,7 +22,7 @@
         <div class="cell tablet-6">
           <label for="message_text">
           How can I help You?
-            <textarea required placeholder="" rows="9" id="message_text" name="message_text"><?php if ($_POST['message_text']!='') { echo $_POST['message_text']; }?></textarea>
+            <textarea required placeholder="" rows="8" id="message_text" name="message_text"><?php if ($_POST['message_text']!='') { echo $_POST['message_text']; }?></textarea>
           </label>
         </div>
       </div>
@@ -40,5 +40,6 @@
 
 
     </form>
+</div>
 
 </section>

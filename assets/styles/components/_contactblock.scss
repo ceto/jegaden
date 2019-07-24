@@ -1,11 +1,5 @@
 .contactform {
-    margin: 0 auto;
-    max-width: 90%;
     text-align: left;
-
-    @include breakpoint($bp-large) {
-        max-width: $layout-content * 0.75;
-    }
 
     label {
         color: inherit;

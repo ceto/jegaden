@@ -21,13 +21,16 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    //max-width: $layout-content;
+    justify-content: space-between;
 
     > li {
         display: block;
-        padding: 0.5em 1.5%;
-        width: 30rem;
+        padding: 0.5em 0;
+        width: 100%;
+
+        @include breakpoint(tablet) {
+            width: calc(50% - #{$layout-gutter-width/2});
+        }
     }
 }
 
@@ -41,12 +44,13 @@
 }
 
 .rescard__title {
-    font-size: 1.5rem;
+    font-size: 1.333rem;
 }
 
 .rescard__text {
     line-height: 1.2;
-    font-size: 0.9275rem;
+    font-size: 0.9375rem;
+    //min-height: 3.5rem;
 }
 
 .rescard__more {

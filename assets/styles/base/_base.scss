@@ -15,5 +15,9 @@ html {
 }
 
 .grid-container--narrow {
-    max-width: $layout-content * 0.75;
+    max-width: $layout-content * 0.875;
+}
+
+.grid-container--xnarrow {
+    max-width: $layout-content * 0.666;
 }

@@ -6,16 +6,20 @@
 .pagehead__content {
     position: relative;
     z-index: 1;
-    max-width: $layout-content;
-    margin: 0 auto;
-    padding: 1rem;
+    // max-width: $layout-content;
+    //margin: 0 auto;
+    // padding: 1rem;
     min-height: 15rem;
     display: flex;
     align-items: center;
 
-    .pagehead--narrow & {
-        max-width: $layout-content * 0.75;
-    }
+    // .pagehead--narrow & {
+    //     max-width: $layout-content * 0.875;
+    // }
+
+    // .pagehead--xnarrow & {
+    //     max-width: $layout-content * 0.666;
+    // }
 }
 
 .pagehead__title {

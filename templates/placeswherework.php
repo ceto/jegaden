@@ -1,8 +1,6 @@
 <section class="placeswherework ps ps--light ps--bordered">
-    <div class="grid-container">
+    <div class="grid-container grid-container--xnarrow">
         <h2>Places where work</h2>
-
-
         <ul class="placeslist">
             <li>
                 <div class="placecard">

@@ -7,8 +7,6 @@
     background-color: $cl-blue;
     color: #fff;
     padding: 5%;
-    margin: 1rem 1rem;
-    max-width: $layout-content * 0.75;
     border-radius: 7px;
 
     @include breakpoint($bp-large) {

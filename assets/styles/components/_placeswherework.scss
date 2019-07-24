@@ -11,44 +11,46 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: $layout-content * 0.75;
+    justify-content: space-between;
 
     > li {
         display: block;
-        padding: 0.5em 1.5%;
-        width: 50%;
+        padding: 0.5em 0;
+        width: 100%;
+
+        @include breakpoint(medium) {
+            width: calc(50% - #{$layout-gutter-width/2});
+        }
     }
 }
 
 .placecard {
     text-align: center;
-    padding: 2rem 2.5% 1rem;
-    border-radius: 7px;
+    padding: 2rem 0 1rem;
     line-height: 1.5;
 }
 
 .placecard__fig {
     img {
-        border: 0.333rem solid $cl-blue;
-        border-radius: 0.666rem;
-        max-width: 13rem;
+        border: 0.25rem solid $cl-blue;
+        border-radius: 0.5rem;
+        max-width: 12rem;
         display: block;
         margin: 0 auto 1rem;
     }
 }
 
 .placecard__title {
-    font-size: 1.333rem;
+    font-size: 1.25rem;
     color: $cl-blue;
     margin: 0 0 0.25em;
 }
 
 .placecard__text {
     line-height: 1.2;
-    font-size: 0.9275rem;
+    font-size: 0.875rem;
 }
 
 .placecard__call {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
