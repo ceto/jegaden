@@ -21,7 +21,7 @@
     //background-color: $cl-light-gray;
     > h3 {
         font-size: 1.666rem;
-        opacity: 0.75;
+        color: lighten($body-font-color, 30%);
     }
 }
 

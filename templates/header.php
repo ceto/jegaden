@@ -7,12 +7,11 @@
             </div>
         </a>
         <nav class="banner__nav">
-            <ul class="mainmenu">
-                <li><a href="">Services</a></li>
-                <li><a href="">Profile</a></li>
-                <li><a href="">Patient Resources</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+            <?php
+                if (has_nav_menu('primary_navigation')) :
+                wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'mainmenu']);
+                endif;
+            ?>
         </nav>
         <div class="banner__actions">
             <a href="tel:45678910"><!--<svg class="icon featcard__icon"><use xlink:href="#icon-phone"></use></svg>-->(971) 45678910</a>

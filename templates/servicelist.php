@@ -1,8 +1,10 @@
 <div class="serviceblock ps ps--light ps--bordered">
     <div class="grid-container grid-container grid-container--xnarrow">
+        <?php if (!is_page_template('tmpl-services.php')) : ?>
         <h2>Services</h2>
         <p>Learn more about our services, click for details.</p>
         <br><br>
+        <?php endif; ?>
         <?php
             $servicecats = get_terms( array(
                 'taxonomy' => 'servicecat',
