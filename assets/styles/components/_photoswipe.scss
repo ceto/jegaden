@@ -27,11 +27,30 @@
 }
 
 .psgallery--incontent {
+    position: relative;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    background-color: $cl-gray-light;
+    padding: 0.5rem;
+    //padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5rem;
+
+    @include breakpoint(tablet) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @include breakpoint(large) {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
 
 .psgallery__item {
+    margin: 0;
+    padding: 0;
+    position: relative;
+
     a {
         display: block;
         position: relative;
@@ -50,16 +69,18 @@
     }
 
     figcaption {
-        font-size: 0.75rem;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        font-size: 0.875rem;
         line-height: $header-lineheight;
         text-align: center;
-        padding: 0.75em 6% 0;
-        //font-style: italic;
-        //font-family: $serif-font-family;
-        //font-weight: 400;
-        //font-family: $header-font-family;
-        //font-weight: $global-weight-normal;
-        color: $dark-gray;
+        padding: 0.5em 6% 0.25em 6%;
+        background-image: linear-gradient(0deg, rgba(#000, 0.5) 0.25em, transparent 100%);
+        font-weight: $fw-bold;
+        color: #fff;
+        //display: none;
     }
 }
 

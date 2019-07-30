@@ -65,7 +65,7 @@
           return '';
         $galleryid='psgallery-'.rand(10,99);
 
-        $output = '<div id="'.$galleryid.'" class="psgallery psgallery--incontent grid-x grid-margin-x grid-margin-y small-up-2 medium-up-2 tablet-up-3 large-up-2 xlarge-up-' . intval( $atts[ 'columns' ] ) .'" itemscope itemtype="http://schema.org/ImageGallery">';
+        $output = '<div id="'.$galleryid.'" class="psgallery psgallery--incontent" itemscope itemtype="http://schema.org/ImageGallery">';
         $i=0;
         foreach ( $attachments as $id => $attachment ) {
           $img        = wp_get_attachment_image_url( $id, $atts[ 'size' ] );
@@ -84,14 +84,14 @@
             }
 
 
-          $output .= '<figure class="cell psgallery__item" data-aos="fade-up-small" data-aos-delay="'. ($i++ % 5) * 100 .'" data-aos-anchor="#'.$galleryid.'" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">'
+          $output .= '<figure class="psgallery__item" data-aos-anchor="#'.$galleryid.'" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">'
             . '<a href="' . esc_url( $img_full ) . '" class="thumbnail" itemprop="contentUrl" '.$caption.' '.$imgtitle.'" data-size="'.$image['1'].'x'.$image['2'].'" style="padding-bottom: '.$ratio.'%">'
             . '<img width="'.$thumb['1'].'" height="'.$thumb['2'].'" src="' . esc_url( $img ) . '" ' . $caption . ' itemprop="thumbnail" alt="' . esc_attr( $attachment->title ) . '"  srcset="' . esc_attr( $img_srcset ) . '" sizes="(max-width: 50em) 87vw, 680px" />'
             . '</a>';
             $output .= (! $attachment->post_excerpt) ? '' : '<figcaption>'.esc_attr( $attachment->post_excerpt ).'</figcaption>';
             $output .= '</figure>';
         }
-
+        $output .= '<div class="censoroverlay"><p>The following pictures may disturb the spiritual calm of some of our viewers.</p><a class="button small js-togglecensoroverlay" href="#">Show Pictures</a></div>';
         $output .= '</div>';
         //$output .= file_get_contents(get_stylesheet_directory_uri() . '/templates/photoswipedom.php');
         $output.='

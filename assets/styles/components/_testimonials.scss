@@ -1,6 +1,10 @@
 .testiblock {
     padding: 4rem 0 5rem;
     text-align: center;
+
+    .page-template-tmpl-profile & {
+        background-color: $cl-gray-xlight;
+    }
 }
 
 .testipanel {

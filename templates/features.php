@@ -21,6 +21,6 @@
                 </div>
             </li>
         </ul>
-        <a href="#" class="button">Full Profile</a>
+        <a href="<?php the_permalink(57); ?>" class="button">Full Profile</a>
     </div>
 </section>

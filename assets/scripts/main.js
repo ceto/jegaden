@@ -78,8 +78,6 @@ $(document).foundation();
 
 $(document).ready(function() {});
 
-
-
 //photoswipe things
 var initPhotoSwipeFromDOM = function(gallerySelector) {
     // parse slide data (url, title, size ...) from DOM elements
@@ -567,3 +565,13 @@ var initPhotoSwipeInline = function(gallerySelector) {
 if ($(".psinlinegallery").length) {
     initPhotoSwipeInline(".psinlinegallery");
 }
+
+$(".js-togglecensoroverlay").on("click", function(e) {
+    e.preventDefault();
+    $(this)
+        .closest(".censoroverlay")
+        .addClass("turned-off");
+    $(this)
+        .closest(".censoroverlay")
+        .remove();
+});
