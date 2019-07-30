@@ -50,12 +50,14 @@
 }
 
 .rescard {
+    position: relative;
     text-align: center;
     background-image: linear-gradient(180deg, rgba($cl-blue, 0.95) 0, rgba($cl-blue-light, 0.85));
     color: #fff;
-    padding: 2rem 7.5% 2rem;
+    padding: 2rem 7.5% 4rem;
     border-radius: 7px;
     line-height: 1.5;
+    height: 100%;
 }
 
 .rescard__title {
@@ -72,4 +74,8 @@
 .rescard__more {
     font-size: 0.75rem;
     margin: 0;
+    position: absolute;
+    bottom: 1.75rem;
+    left: 50%;
+    transform: translateX(-50%);
 }

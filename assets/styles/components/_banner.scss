@@ -51,8 +51,16 @@
     flex-wrap: nowrap;
     justify-content: center;
 
+    @include breakpoint(large) {
+        font-size: 1.125rem;
+    }
+
     > li {
         margin: 0 1%;
+
+        @include breakpoint(large) {
+            margin: 0 1.5%;
+        }
 
         a {
             display: inline-block;

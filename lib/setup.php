@@ -20,6 +20,9 @@ function setup() {
   // Community translations can be found at https://github.com/roots/sage-translations
   load_theme_textdomain('jegaden', get_template_directory() . '/lang');
 
+
+  add_post_type_support('page', 'excerpt');
+
   // Enable plugins to manage the document title
   // http://codex.wordpress.org/Function_Reference/add_theme_support#Title_Tag
   add_theme_support('title-tag');
@@ -87,6 +90,7 @@ function display_sidebar() {
     is_front_page(),
     is_singular(),
     is_page_template('template-custom.php'),
+    is_home()
   ]);
 
   return apply_filters('sage/display_sidebar', $display);
