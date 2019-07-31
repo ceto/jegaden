@@ -1,7 +1,7 @@
 .articlecard {
     @extend .ps;
 
-    &:nth-child(2n + 1) {
+    &:nth-child(2n) {
         background-color: $cl-gray-xlight;
     }
 

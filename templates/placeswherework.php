@@ -25,21 +25,21 @@
             <li>
                 <div class="placecard">
                     <figure class="placecard__fig">
-                        <img src="<?= get_stylesheet_directory_uri(); ?>/dist/images/buildings/university.jpg" alt="">
-                    </figure>
-                    <h3 class="placecard__title">Mediclinic Airport Road Hospital</h3>
-                    <p class="placecard__text">Airport Road - Abu Dhabi - United Arab Emirates</p>
-                    <a href="tel:12345" class="placecard__call">+971 435 999</a>
-                </div>
-            </li>
-            <li>
-                <div class="placecard">
-                    <figure class="placecard__fig">
                         <img src="<?= get_stylesheet_directory_uri(); ?>/dist/images/buildings/mediclinic-airport.jpg" alt="">
                     </figure>
                     <h3 class="placecard__title">University Claude Bernard Lyon 1</h3>
                     <p class="placecard__text">34 boulevard du 11 Novembre 1918, - Lyon - France</p>
                     <a href="tel:12345" class="placecard__call">+04 435 999</a>
+                </div>
+            </li>
+            <li>
+                <div class="placecard">
+                    <figure class="placecard__fig">
+                        <img src="<?= get_stylesheet_directory_uri(); ?>/dist/images/buildings/university.jpg" alt="">
+                    </figure>
+                    <h3 class="placecard__title">Mediclinic Airport Road Hospital</h3>
+                    <p class="placecard__text">Airport Road - Abu Dhabi - United Arab Emirates</p>
+                    <a href="tel:12345" class="placecard__call">+971 435 999</a>
                 </div>
             </li>
         </ul>

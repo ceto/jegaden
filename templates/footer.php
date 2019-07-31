@@ -10,15 +10,15 @@
     <ul class="sitebottom__icons">
         <li><a href="#">
             <svg class="icon"><use xlink:href="#icon-mapmarker"></use></svg>
-            Dubai, Sample avn 12-34
+            Dubai, Abu-Dhabi, Lyon
         </a></li>
         <li><a href="#">
             <svg class="icon"><use xlink:href="#icon-phone"></use></svg>
-            (971) 1234 9880
+            (971) 589 25 8515
         </a></li>
-        <li><a href="#">
+        <li><a href="mailto:prolivierjegaden@gmail.com">
             <svg class="icon"><use xlink:href="#icon-emailchat"></use></svg>
-            hello@drjegeden.ae
+            prolivierjegaden@gmail.com
         </a></li>
     </ul>
 </aside>

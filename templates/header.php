@@ -14,7 +14,7 @@
             ?>
         </nav>
         <div class="banner__actions">
-            <a href="tel:45678910"><!--<svg class="icon featcard__icon"><use xlink:href="#icon-phone"></use></svg>-->(971) 45678910</a>
+            <a href="tel:45678910"><!--<svg class="icon featcard__icon"><use xlink:href="#icon-phone"></use></svg>-->(971) 589 258 515</a>
         </div>
     </header>
 </div>

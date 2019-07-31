@@ -6,7 +6,7 @@
     text-align: left;
     display: grid;
     grid-column-gap: $layout-gutter-pct * 4;
-    grid-row-gap: rem-calc($layout-gutter-width * 4);
+    grid-row-gap: rem-calc($layout-gutter-width * 3);
     grid-template-columns: 1fr;
     max-width: 40rem;
     margin: 0 auto;
