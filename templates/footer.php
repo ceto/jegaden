@@ -9,23 +9,29 @@
     </div>
     <ul class="sitebottom__icons">
         <li><a href="#">
-            <svg class="icon"><use xlink:href="#icon-mapmarker"></use></svg>
-            Dubai, Abu-Dhabi, Lyon
-        </a></li>
+                <svg class="icon">
+                    <use xlink:href="#icon-mapmarker"></use>
+                </svg>
+                Dubai, Abu-Dhabi
+            </a></li>
         <li><a href="#">
-            <svg class="icon"><use xlink:href="#icon-phone"></use></svg>
-            (971) 589 25 8515
-        </a></li>
+                <svg class="icon">
+                    <use xlink:href="#icon-phone"></use>
+                </svg>
+                (971) 589 25 8515
+            </a></li>
         <li><a href="mailto:prolivierjegaden@gmail.com">
-            <svg class="icon"><use xlink:href="#icon-emailchat"></use></svg>
-            prolivierjegaden@gmail.com
-        </a></li>
+                <svg class="icon">
+                    <use xlink:href="#icon-emailchat"></use>
+                </svg>
+                prolivierjegaden@gmail.com
+            </a></li>
     </ul>
 </aside>
 <footer class="sitefooter">
     <div class="sitefooter__inner">
         <div class="">
-        All rights Reserved
+            All rights Reserved
         </div>
         <div class="">
             <a href="#">Privacy &amp; Policy</a>

@@ -85,7 +85,7 @@
 
 
           $output .= '<figure class="psgallery__item" data-aos-anchor="#'.$galleryid.'" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">'
-            . '<a href="' . esc_url( $img_full ) . '" class="thumbnail" itemprop="contentUrl" '.$caption.' '.$imgtitle.'" data-size="'.$image['1'].'x'.$image['2'].'" style="padding-bottom: '.$ratio.'%">'
+            . '<a href="' . esc_url( $img_full ) . '" class="thumbnail" itemprop="contentUrl" '.$caption.' '.$imgtitle.'" data-size="'.$image['1'].'x'.$image['2'].'" style="nopadding-bottom: '.$ratio.'%">'
             . '<img width="'.$thumb['1'].'" height="'.$thumb['2'].'" src="' . esc_url( $img ) . '" ' . $caption . ' itemprop="thumbnail" alt="' . esc_attr( $attachment->title ) . '"  srcset="' . esc_attr( $img_srcset ) . '" sizes="(max-width: 50em) 87vw, 680px" />'
             . '</a>';
             $output .= (! $attachment->post_excerpt) ? '' : '<figcaption>'.esc_attr( $attachment->post_excerpt ).'</figcaption>';
