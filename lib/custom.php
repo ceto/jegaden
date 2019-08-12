@@ -33,6 +33,12 @@
         ));
     }
 
+    // 6. Enable Content filter on wysiwyg fields
+    add_filter('acf/format_value/type=wysiwyg', 'format_value_wysiwyg', 10, 3);
+    function format_value_wysiwyg( $value, $post_id, $field ) {
+        $value = apply_filters( 'the_content', $value );
+        return $value;
+    }
 
 
     function jegaden_blockgrid_gallery( $output, $atts, $instance ) {

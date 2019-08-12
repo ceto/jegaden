@@ -12,13 +12,13 @@
     </section>
     <?php if( have_rows('sections') ): ?>
     <?php while ( have_rows('sections') ) : the_row(); ?>
-        <section class="ps thepage__section">
-            <div class="grid-container grid-container--xnarrow">
-                <div class="copywrite">
-                    <?php the_sub_field('content'); ?>
-                </div>
+    <section class="ps thepage__section">
+        <div class="grid-container grid-container--xnarrow">
+            <div class="copywrite">
+                <?php the_sub_field('content'); ?>
             </div>
-        </section>
+        </div>
+    </section>
     <?php endwhile; ?>
     <?php endif; ?>
 </article>
