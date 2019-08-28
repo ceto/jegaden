@@ -8,7 +8,7 @@
         <div class="cell tablet-6">
           <label for="message_name">
           Name
-            <input type="text" required placeholder="Add Your name" id="message_name" name="message_name" value="<?php echo $_POST['message_name']; ?>">
+            <input type="text" required placeholder="Add your name" id="message_name" name="message_name" value="<?php echo $_POST['message_name']; ?>">
           </label>
           <label for="message_email">
           E-mail

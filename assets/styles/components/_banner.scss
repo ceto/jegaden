@@ -78,6 +78,11 @@
     font-weight: $fw-bold;
     font-size: 1.125em;
     font-feature-settings: "lnum" 1;
+    margin-top: 0.5em;
+
+    @include breakpoint($bp-tablet) {
+        margin-top: 0;
+    }
 
     .icon {
         position: absolute;
