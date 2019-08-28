@@ -31,6 +31,7 @@ use Roots\Sage\Wrapper;
     <?php
       do_action('get_footer');
       get_template_part('templates/footer');
+      get_template_part('templates/floatingactions');
     ?>
     <?php get_template_part('templates/svg','icons'); ?>
     <?php wp_footer(); ?>

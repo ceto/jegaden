@@ -1,11 +1,11 @@
-<section class="hero">
+<section class="hero" data-magellan data-mage>
     <div class="hero__inner grid-container grid-container--narrow">
         <div class="hero__content">
             <p class="hero__subcaption">
-                <?php the_field('hero_subcaption'); ?>Minimally Invasive and Robotic Surgery, Cardiac Valve Repair, Coronary bypass Surgery
+                Minimally Invasive and Robotic Surgery, Cardiac Valve Repair, Coronary bypass Surgery
             </p>
-            <h2 class="hero__caption"><?php the_field('hero_caption'); ?>"An Experience you can trust"</h2>
-            <a href="<?php the_field('hero_btntarget'); ?>" class="hero__action button"><?php the_field('hero_btntext'); ?>Read More</a>
+            <h2 class="hero__caption">"An Experience you can trust"</h2>
+            <a href="#services" class="hero__action button">Read More</a>
         </div>
         <figure class="hero__fig">
             <?php if ( $image = get_field('hero_image') ) : ?>

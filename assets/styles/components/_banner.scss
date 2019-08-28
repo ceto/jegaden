@@ -77,4 +77,14 @@
     line-height: 1;
     font-weight: $fw-bold;
     font-size: 1.125em;
+    font-feature-settings: "lnum" 1;
+
+    .icon {
+        position: absolute;
+        fill: currentColor;
+        stroke: currentColor;
+        width: 1.875em;
+        height: 1.875em;
+        transform: translateY(-25%) translateX(-120%);
+    }
 }

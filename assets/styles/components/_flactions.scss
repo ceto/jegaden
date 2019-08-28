@@ -1,0 +1,50 @@
+.flactions {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    max-width: 30rem;
+    padding: 0 1%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    line-height: 1;
+    text-transform: uppercase;
+    font-size: 0.9375rem;
+    font-feature-settings: "lnum" 1;
+
+    @include breakpoint(large) {
+        left: auto;
+        right: 0;
+        bottom: auto;
+        top: 40%;
+        padding: 0;
+        transform: rotate(-90deg) translateX(50%);
+        transform-origin: right bottom;
+        //transform: none;
+    }
+
+    a {
+        color: #fff;
+        background-color: $cl-bluedark;
+        display: inline-block;
+        padding: 0.875em 0.875em 0.5em;
+        font-weight: $global-weight-bold;
+        //width: 49.5%;
+        margin: 0 0.125em;
+        text-align: center;
+        border-radius: $global-radius $global-radius 0 0;
+
+        &:hover,
+        &:focus {
+            background-color: $cl-blue;
+        }
+
+        .icon {
+            fill: currentColor;
+            stroke: currentcolor;
+            width: 1em;
+            height: 1em;
+        }
+    }
+}

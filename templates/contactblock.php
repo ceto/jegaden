@@ -1,4 +1,4 @@
-<section class="contactblock ps ps--darkgradient text-center">
+<section id="contact" class="contactblock ps ps--darkgradient text-center" data-magellan-target="contact">
     <div class="grid-container grid-container--xnarrow">
     <h2>Contact</h2>
     <br>

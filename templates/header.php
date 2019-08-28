@@ -14,7 +14,7 @@
             ?>
         </nav>
         <div class="banner__actions">
-            <a href="tel:45678910"><!--<svg class="icon featcard__icon"><use xlink:href="#icon-phone"></use></svg>-->(971) 589 258 515</a>
+            <a target="_blank" href="https://wa.me/9710581682607"><svg class="icon"><use xlink:href="#icon-phone"></use></svg>971 (0) 5816 82607</a>
         </div>
     </header>
 </div>

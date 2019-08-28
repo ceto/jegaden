@@ -1,4 +1,4 @@
-<div class="serviceblock ps ps--light ps--bordered">
+<div id="services" class="serviceblock ps ps--light ps--bordered" data-magellan-target="services">
     <div class="grid-container grid-container grid-container--xnarrow">
         <?php if (!is_page_template('tmpl-services.php')) : ?>
         <h2>Services</h2>

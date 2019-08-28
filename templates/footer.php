@@ -14,11 +14,11 @@
                 </svg>
                 Dubai, Abu-Dhabi
             </a></li>
-        <li><a href="#">
+        <li><a target="_blank" href="https://wa.me/9710581682607">
                 <svg class="icon">
                     <use xlink:href="#icon-phone"></use>
                 </svg>
-                (971) 589 25 8515
+                971 (0) 5816 82607
             </a></li>
         <li><a href="mailto:prolivierjegaden@gmail.com">
                 <svg class="icon">
@@ -33,8 +33,8 @@
         <div class="">
             All rights Reserved
         </div>
-        <div class="">
+        <!-- <div class="">
             <a href="#">Privacy &amp; Policy</a>
-        </div>
+        </div> -->
     </div>
 </footer>
