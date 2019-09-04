@@ -4,10 +4,10 @@
     require( '../../../wp-load.php' );
 
 if($_POST) {
-  $to_Email = "szabogabi@gmail.com";
+  $to_Email = "szabogabor@hydrogene.hu";
   $dev_Email = "orsolya.rozsnyai@vieeye.hu";
-  $subject = __('Webes időpontfoglalás','optimum');
-  $resp_subject = "Optimum Fogászat - Jelentkezés visszaigazolása";
+  $subject = __('drjegaden.com - Contact form','jegaden');
+  $resp_subject = "drjegaden.com - Thank You";
 
   if(!isset($_SERVER['HTTP_X_REQUESTED_WITH']) AND strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) != 'xmlhttprequest') {
 
@@ -21,7 +21,7 @@ if($_POST) {
   }
 
   if(!isset($_POST["userName"]) || !isset($_POST["userEmail"]) || !isset($_POST["userTel"])) {
-    $output = json_encode(array('type'=>'error', 'text' => __('Hiányzó kötelező mező','optimum') ));
+    $output = json_encode(array('type'=>'error', 'text' => __('Some fields are missing','jegaden') ));
     die($output);
   }
   $user_Name = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
@@ -32,18 +32,16 @@ if($_POST) {
   $user_Message = str_replace("\&#39;", "'", $user_Message);
   $user_Message = str_replace("&#39;", "'", $user_Message);
 
-  $user_Message =  $user_Message. "\r\n". "\r\n". "\r\n". 'Időpontok: '. $user_Time. "\r\n".'Típusa: '.$user_Konz;
-
   if(strlen($user_Name)<4) {
-    $output = json_encode(array('type'=>'error', 'text' => __('Teljes név megadása kötelező','optimum')));
+    $output = json_encode(array('type'=>'error', 'text' => __('Full name is required','jegaden')));
     die($output);
   }
   if(!filter_var($user_Email, FILTER_VALIDATE_EMAIL)) {
-    $output = json_encode(array('type'=>'error', 'text' => __('Érvénytelen e-mail cím','optimum')));
+    $output = json_encode(array('type'=>'error', 'text' => __('E-mail is invalid','jegaden')));
     die($output);
   }
   if(strlen($user_Tel)<6) {
-    $output = json_encode(array('type'=>'error', 'text' => __('Telefonszám megadása kötelező','optimum')));
+    $output = json_encode(array('type'=>'error', 'text' => __('Phone is required','jegaden')));
     die($output);
   }
 
@@ -53,10 +51,10 @@ if($_POST) {
   'BCC: '.$dev_Email.'' . "\r\n" .
   'X-Mailer: PHP/' . phpversion();
 
-  $sentMail = @wp_mail($to_Email, $subject, 'Név: '.$user_Name. "\r\n". 'E-mail: '.$user_Email. "\r\n" .'Telefon: '.$user_Tel . "\r\n\n"  .' '.$user_Message, $headers);
+  $sentMail = @wp_mail($to_Email, $subject, 'Name: '.$user_Name. "\r\n". 'E-mail: '.$user_Email. "\r\n" .'Phone: '.$user_Tel . "\r\n\n"  .' '.$user_Message, $headers);
 
   if(!$sentMail) {
-    $output = json_encode(array('type'=>'error', 'text' => __('Üzenet küldése nem sikerült. Vegye fel velünk a kapcsolatot e-mailben vagy telefonon!','optimum')));
+    $output = json_encode(array('type'=>'error', 'text' => __('Message not sent. Please contact us on e-mail or phone!','jegaden')));
     die($output);
   } else {
 
@@ -64,12 +62,12 @@ if($_POST) {
     'Reply-To: '.$to_Email.'' . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
-    $resp_text=__('Tisztelt','optimum').' '.$user_Name.'!'."\r\n\n".
-    __('Köszönjük jelentkezését! Levelét továbbítottuk az illetékes kollégánknak, aki hamarosan felveszi Önnel a kapcsolatot.','optimum')."\r\n\n".
-    'Sürgős esetben az alábbi telefonszámon tud elérni minket: 06 30 5637 537'."\r\n\n".
-    'Üdvözlettel,'."\r\n".'Optimum Fogászat';
+    $resp_text=__('Dear','jegaden').' '.$user_Name.'!'."\r\n\n".
+    __('Köszönjük jelentkezését! Levelét továbbítottuk az illetékes kollégánknak, aki hamarosan felveszi Önnel a kapcsolatot.','jegaden')."\r\n\n".
+    'Sürgős esetben az alábbi telefonszámon tud elérni minket: 971 5892 58515'."\r\n\n".
+    'Best regards,'."\r\n".'Dr. Jegaden ';
     @wp_mail($user_Email, $resp_subject, $resp_text, $resp_headers);
-    $output = json_encode(array('type'=>'message', 'text' => _('Tisztelt','optimum').' '.$user_Name .__('! Köszönjük. Időpontfoglalását továbbítottuk az illetékes kollégánknak, aki hamarosan felveszi Önnel a kapcsolatot.','optimum')));
+    $output = json_encode(array('type'=>'message', 'text' => _('Dear','jegaden').' '.$user_Name .__('! Your message has been sent. Thank You.','jegaden')));
     die($output);
   }
 }
