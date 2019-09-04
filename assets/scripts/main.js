@@ -614,7 +614,7 @@ $("#contact_form").on("submit", function(ev, frm) {
         };
         $("#contact_submit").addClass("disabled");
         $("#contact_submit").attr("disabled", "disabled");
-        $("#contact_submit").text("Küldés folyamatban");
+        $("#contact_submit").text("Sending message...");
 
         //Ajax post data to server
         $.post(
