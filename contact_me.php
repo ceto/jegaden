@@ -63,9 +63,9 @@ if($_POST) {
     'X-Mailer: PHP/' . phpversion();
 
     $resp_text=__('Dear','jegaden').' '.$user_Name.'!'."\r\n\n".
-    __('Köszönjük jelentkezését! Levelét továbbítottuk az illetékes kollégánknak, aki hamarosan felveszi Önnel a kapcsolatot.','jegaden')."\r\n\n".
-    'Sürgős esetben az alábbi telefonszámon tud elérni minket: 971 5892 58515'."\r\n\n".
-    'Best regards,'."\r\n".'Dr. Jegaden ';
+    __('Thank you for your message and interest. Please send attached any document appropriate (Clinical report, Echo, Angio report, CT scan...). My assistant will contact you shortly to answer your demand and organize further appointment.','jegaden')."\r\n\n".
+    'In urgent issues, please call this number:  971 5892 58515'."\r\n\n".
+    'Best regards,'."\r\n".'Pr Jegaden';
     @wp_mail($user_Email, $resp_subject, $resp_text, $resp_headers);
     $output = json_encode(array('type'=>'message', 'text' => _('Dear','jegaden').' '.$user_Name .__('! Your message has been sent. Thank You.','jegaden')));
     die($output);
