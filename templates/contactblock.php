@@ -29,6 +29,11 @@
       <br>
       <div class="grid-x grid-margin-x">
         <div class="cell formactions text-center">
+            <div id="formerror" data-abide-error class="secondary callout" style="display: none;">
+            <p>
+                <i class="fi-alert"></i> There are some error in the form. Please check your input fields.
+            </p>
+            </div>
             <div id="result"></div>
             <input type="hidden" name="ap_id" value="<?php echo $subjecto; ?>">
             <input type="hidden" name="message_page" value="<?php the_title(); ?>">
