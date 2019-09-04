@@ -5,7 +5,7 @@
 
 if($_POST) {
   $to_Email = "szabogabor@hydrogene.hu";
-  $dev_Email = "orsolya.rozsnyai@vieeye.hu";
+  $dev_Email = "leads@vieeye.hu";
   $subject = __('drjegaden.com - Contact form','jegaden');
   $resp_subject = "drjegaden.com - Thank You";
 
