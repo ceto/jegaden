@@ -26,7 +26,6 @@ if($_POST) {
   }
   $user_Name = filter_var($_POST["userName"], FILTER_SANITIZE_STRING);
   $user_Email = filter_var($_POST["userEmail"], FILTER_SANITIZE_EMAIL);
-  $user_Firm = filter_var($_POST["userFirm"], FILTER_SANITIZE_STRING);
   $user_Tel = filter_var($_POST["userTel"], FILTER_SANITIZE_STRING);
   $user_Message = filter_var($_POST["userMsg"], FILTER_SANITIZE_STRING);
 

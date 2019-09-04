@@ -16,7 +16,7 @@
           </label>
           <label for="message_phone">
           Telephone
-            <input type="email" required placeholder="Add your phone number" id="message_phone" name="message_phone" value="<?php echo $_POST['message_phone']; ?>">
+            <input type="tel" required placeholder="Add your phone number" id="message_phone" name="message_tel" value="<?php echo $_POST['message_phone']; ?>">
           </label>
         </div>
         <div class="cell tablet-6">
