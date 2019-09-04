@@ -1,7 +1,7 @@
 
 <?php
-  define( 'WP_USE_THEMES', FALSE );
-  require( '../wp-load.php' );
+    define( 'WP_USE_THEMES', FALSE );
+    require( '../../../wp-load.php' );
 
 if($_POST) {
   $to_Email = "szabogabi@gmail.com";
@@ -29,8 +29,6 @@ if($_POST) {
   $user_Firm = filter_var($_POST["userFirm"], FILTER_SANITIZE_STRING);
   $user_Tel = filter_var($_POST["userTel"], FILTER_SANITIZE_STRING);
   $user_Message = filter_var($_POST["userMsg"], FILTER_SANITIZE_STRING);
-  $user_Time = implode(', ', $_POST["userTime"]);
-  $user_Konz = implode(', ',$_POST["userKonz"]);
 
   $user_Message = str_replace("\&#39;", "'", $user_Message);
   $user_Message = str_replace("&#39;", "'", $user_Message);
