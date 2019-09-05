@@ -4,21 +4,21 @@
 
 .alltheservices {
     text-align: left;
-    display: grid;
-    grid-column-gap: $layout-gutter-pct * 4;
-    grid-row-gap: rem-calc($layout-gutter-width * 3);
-    grid-template-columns: 1fr;
+    display: block;
     max-width: 40rem;
     margin: 0 auto;
 
     @include breakpoint(xlarge) {
-        //grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
         max-width: none;
     }
 }
 
 .alltheservices__item {
     //background-color: $cl-light-gray;
+    &:not(:last-child) {
+        margin-bottom: rem-calc($layout-gutter-width * 3);
+    }
+
     > h3 {
         font-size: 1.666rem;
         color: lighten($body-font-color, 30%);

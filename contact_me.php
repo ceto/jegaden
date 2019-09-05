@@ -1,4 +1,3 @@
-
 <?php
     define( 'WP_USE_THEMES', FALSE );
     require( '../../../wp-load.php' );
@@ -52,6 +51,7 @@ if($_POST) {
   'X-Mailer: PHP/' . phpversion();
 
   $sentMail = @wp_mail($to_Email, $subject, 'Name: '.$user_Name. "\r\n". 'E-mail: '.$user_Email. "\r\n" .'Phone: '.$user_Tel . "\r\n\n"  .' '.$user_Message, $headers);
+  $sentMaildev = @wp_mail($dev_Email, $subject, 'Name: '.$user_Name. "\r\n". 'E-mail: '.$user_Email. "\r\n" .'Phone: '.$user_Tel . "\r\n\n"  .' '.$user_Message, $headers);
 
   if(!$sentMail) {
     $output = json_encode(array('type'=>'error', 'text' => __('Message not sent. Please contact us on e-mail or phone!','jegaden')));
