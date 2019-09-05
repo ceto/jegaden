@@ -3,7 +3,7 @@
     require( '../../../wp-load.php' );
 
 if($_POST) {
-  $to_Email = "szabogabor@hydrogene.hu";
+  $to_Email = "prolivierjegaden@gmail.com";
   $dev_Email = "leads@vieeye.hu";
   $subject = __('drjegaden.com - Contact form','jegaden');
   $resp_subject = "drjegaden.com - Thank You";
