@@ -47,11 +47,10 @@ if($_POST) {
 
   $headers = 'From: '.$user_Email.'' . "\r\n" .
   'Reply-To: '.$user_Email.'' . "\r\n" .
-  'BCC: '.$dev_Email.'' . "\r\n" .
+//  'BCC: '.$dev_Email.'' . "\r\n" .
   'X-Mailer: PHP/' . phpversion();
 
   $sentMail = @wp_mail($to_Email, $subject, 'Name: '.$user_Name. "\r\n". 'E-mail: '.$user_Email. "\r\n" .'Phone: '.$user_Tel . "\r\n\n"  .' '.$user_Message, $headers);
-//  $sentMaildev = @wp_mail($dev_Email, $subject, 'Name: '.$user_Name. "\r\n". 'E-mail: '.$user_Email. "\r\n" .'Phone: '.$user_Tel . "\r\n\n"  .' '.$user_Message, $headers);
 
   if(!$sentMail) {
     $output = json_encode(array('type'=>'error', 'text' => __('Message not sent. Please contact us on e-mail or phone!','jegaden')));
