@@ -10,7 +10,7 @@
                     </figure>
                     <h3 class="placecard__title">Mediclinic City Hospital</h3>
                     <p class="placecard__text">Building 37, 26<sup>th</sup> St - Dubai - United Arab Emirates</p>
-                    <!-- <a href="tel:12345" class="placecard__call">+971 435 999</a> -->
+                    <a href="tel:+971435999" class="placecard__call">+971 435 999</a>
                 </div>
             </li>
             <li>
