@@ -10,7 +10,7 @@
                     </figure>
                     <h3 class="placecard__title">Mediclinic City Hospital</h3>
                     <p class="placecard__text">Building 37, 26<sup>th</sup> St - Dubai - United Arab Emirates</p>
-                    <a href="tel:12345" class="placecard__call">+971 435 999</a>
+                    <!-- <a href="tel:12345" class="placecard__call">+971 435 999</a> -->
                 </div>
             </li>
             <li>
@@ -20,7 +20,7 @@
                     </figure>
                     <h3 class="placecard__title">Mohammed Bin Rashid University</h3>
                     <p class="placecard__text">Buildin 14, - Dubai - United Arab Emirates</p>
-                    <a href="tel:12345" class="placecard__call">+971 435 999</a>
+                    <!-- <a href="tel:12345" class="placecard__call">+971 435 999</a> -->
                 </div>
             </li>
             <li>
@@ -30,7 +30,7 @@
                     </figure>
                     <h3 class="placecard__title">Mediclinic Airport Road Hospital</h3>
                     <p class="placecard__text">Airport Road - Abu Dhabi - United Arab Emirates</p>
-                    <a href="tel:12345" class="placecard__call">+971 435 999</a>
+                    <!-- <a href="tel:12345" class="placecard__call">+971 435 999</a> -->
                 </div>
             </li>
             <li>
@@ -40,7 +40,7 @@
                     </figure>
                     <h3 class="placecard__title">University Claude Bernard Lyon 1</h3>
                     <p class="placecard__text">34 boulevard du 11 Novembre 1918, - Lyon - France</p>
-                    <a href="tel:12345" class="placecard__call">+04 435 999</a>
+                    <!-- <a href="tel:12345" class="placecard__call">+04 435 999</a> -->
                 </div>
             </li>
         </ul>

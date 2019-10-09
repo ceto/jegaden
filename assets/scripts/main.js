@@ -628,6 +628,10 @@ $("#contact_form").on("submit", function(ev, frm) {
                     output = '<p class="error">' + response.text + "</p>";
                 } else {
                     output = '<p class="success">' + response.text + "</p>";
+                    window.dataLayer = window.dataLayer || [];
+                    window.dataLayer.push({
+                    'event': 'msgSent'
+                    });
 
                     //reset values in all input fields
                     $("#contact_form input").val("");

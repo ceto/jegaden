@@ -14,13 +14,13 @@
                 </svg>
                 Dubai, Abu-Dhabi
             </a></li>
-        <li><a target="_blank" href="https://wa.me/971589258515">
+        <li><a target="_blank" class="gtme-call" href="https://wa.me/971589258515">
                 <svg class="icon">
                     <use xlink:href="#icon-phone"></use>
                 </svg>
                 971 5892 58515
             </a></li>
-        <li><a href="mailto:prolivierjegaden@gmail.com">
+        <li><a class="gtme-mail" href="mailto:prolivierjegaden@gmail.com">
                 <svg class="icon">
                     <use xlink:href="#icon-emailchat"></use>
                 </svg>
