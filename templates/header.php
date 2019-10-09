@@ -14,7 +14,7 @@
             ?>
         </nav>
         <div class="banner__actions">
-            <a target="_blank" lass="gtme-call" href="https://wa.me/971589258515"><svg class="icon"><use xlink:href="#icon-phone"></use></svg>971 5892 58515</a>
+            <a target="_blank" class="gtme-call" href="https://wa.me/971589258515"><svg class="icon"><use xlink:href="#icon-phone"></use></svg>971 5892 58515</a>
         </div>
     </header>
 </div>
