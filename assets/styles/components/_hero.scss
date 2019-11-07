@@ -62,13 +62,13 @@
     grid-column: 1 / span 3;
     grid-row: 1 / span 1;
     z-index: 1;
-    padding: calc(2rem + 10%) 0;
+    padding: 0 15% 4rem 0;
     font-size: calc(1.25rem + 0.25vw);
-    padding-right: 15%;
 
     @include breakpoint($bp-tablet) {
         grid-column: 1 / span 2;
-        padding-right: 0;
+        padding: calc(2rem + 10%) 0;
+        //padding-right: 0;
         font-size: 1.5rem;
     }
 
@@ -140,15 +140,10 @@ p.hero__subcaption {
         height: 100%;
         object-fit: contain;
         object-position: right bottom;
-        //border: 0.4333rem solid $cl-blue;
-        //border-right-width: 0;
-        //mix-blend-mode: multiply;
-        //filter: grayscale(0.75) brightness(200%);
-        max-width: 26rem;
+        max-width: 10rem;
 
         @include breakpoint($bp-tablet) {
-            //border-width: 0.5rem;
-            //width: 50%;
+            max-width: 26rem;
         }
     }
 }
