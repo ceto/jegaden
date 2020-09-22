@@ -2,8 +2,8 @@
     <header class="banner">
         <a class="banner__brand" href="<?= esc_url(home_url('/')); ?>">
             <div class="textlogo">
-                Prof. Olivier Jegaden, MD, PHD.
-                <span>Cardiac Surgeon Professor of Cardiac Surgery</span>
+                <?php _e('Prof. Olivier Jegaden, MD, PHD.','jegaden') ?>
+                <span><?php _e('Cardiac Surgeon Professor of Cardiac Surgery','jegaden') ?></span>
             </div>
         </a>
         <nav class="banner__nav">
