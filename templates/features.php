@@ -21,6 +21,6 @@
                 </div>
             </li>
         </ul>
-        <a href="<?php the_permalink(53); ?>" class="button">Full Profile</a>
+        <a href="<?php the_permalink(53); ?>" class="button"><?php _e('Full Profile','jegaden') ?></a>
     </div>
 </section>

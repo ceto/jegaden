@@ -12,7 +12,7 @@
 
 <section class="testiblock">
     <div class="grid-container grid-container--xnarrow">
-        <h2>Testimonials</h2>
+        <h2><?php _e('Testimonials','jegaden') ?></h2>
         <div class="testipanel">
             <div class="orbit" role="region" aria-label="testimonils" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
                 <div class="orbit-wrapper">
