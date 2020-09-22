@@ -3,8 +3,8 @@
 <aside class="sitebottom ps ps--narrow">
     <div class="sitebottom__brand">
         <div class="textlogo">
-            Prof. Olivier Jegaden, MD, PHD.
-            <span>Cardiac Surgeon Professor of Cardiac Surgery</span>
+            <?php _e('Prof. Olivier Jegaden, MD, PHD.','jegaden') ?>
+            <span><?php _e('Cardiac Surgeon Professor of Cardiac Surgery','jegaden') ?></span>
         </div>
     </div>
     <ul class="sitebottom__icons">
@@ -31,7 +31,7 @@
 <footer class="sitefooter">
     <div class="sitefooter__inner">
         <div class="">
-            All rights Reserved
+            <?php _e('All rights Reserved','jegaden') ?>
         </div>
         <!-- <div class="">
             <a href="#">Privacy &amp; Policy</a>
