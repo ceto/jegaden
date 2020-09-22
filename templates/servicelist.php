@@ -1,8 +1,8 @@
 <div id="services" class="serviceblock ps ps--light ps--bordered" data-magellan-target="services">
     <div class="grid-container grid-container grid-container--xnarrow">
         <?php if (!is_page_template('tmpl-services.php')) : ?>
-        <h2>Services</h2>
-        <p>Learn more about our services, click for details.</p>
+        <h2><?php _e('Services','jegaden') ?></h2>
+        <p><?php _e('Learn more about our services, click for details.','jegaden') ?></p>
         <br><br>
         <?php endif; ?>
         <?php
