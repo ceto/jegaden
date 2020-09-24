@@ -1,7 +1,17 @@
+/*home*/
+
 .banner__actions .icon {
     transform: translateY(-25%) translateX(120%);
 }
 
 .contactform {
     text-align: right;
+}
+
+
+/*profile*/
+
+.pagehead__fig {
+    text-align: left;
+    padding: .5% 0 0 1.5%;
 }
