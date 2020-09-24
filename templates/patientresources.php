@@ -9,7 +9,7 @@
 ?>
 <section class="patientresources ps ps--light ps--bordered">
     <div class="grid-container grid-container--xnarrow">
-        <h2>Patient Resources</h2>
+        <h2><?php _e('Patient Resources','jegaden') ?></h2>
         <ul class="resourcelist">
             <?php while ($stickyposts->have_posts()) : $stickyposts->the_post(); ?>
                 <?php setup_postdata( $post ); ?>
