@@ -10,7 +10,7 @@
     justify-content: center;
     line-height: 1;
     text-transform: uppercase;
-    font-size: 0.9375rem;
+    font-size: 0.875rem;
     //font-feature-settings: "lnum" 1;
 
     @include breakpoint(large) {
@@ -28,7 +28,7 @@
         color: #fff;
         background-color: $cl-bluedark;
         display: inline-block;
-        padding: 0.875em 1.875em 0.666em;
+        padding: 0.875em 0.875em 0.666em;
         font-weight: $global-weight-bold;
         //width: 49.5%;
         margin: 0 0.125em;
@@ -45,6 +45,11 @@
             stroke: currentcolor;
             width: 1em;
             height: 1em;
+        }
+
+        span {
+            // word-wrap: none;
+            white-space: nowrap;
         }
     }
 }

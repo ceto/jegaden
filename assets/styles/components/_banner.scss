@@ -48,8 +48,9 @@
     padding: 0;
     margin: 0.75em 0;
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: center;
+    font-size: .875rem;
 
     @include breakpoint(large) {
         font-size: 1.125rem;
