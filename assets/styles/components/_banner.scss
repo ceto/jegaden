@@ -11,7 +11,7 @@
         width: 100%;
         font-size: 0.875rem;
 
-        @include breakpoint($bp-tablet) {
+        @include breakpoint($bp-large) {
             width: auto;
         }
     }
@@ -19,25 +19,29 @@
 
 .banner__brand {
     display: block;
+    font-size: 1rem;
+    // @include breakpoint($bp-large) {
+    //     font-size: .875rem;
+    // }
 }
 
-.textlogo {
-    color: $body-font-color;
-    display: inline-block;
-    font-size: 1.125em;
-    text-transform: uppercase;
-    font-weight: $fw-bold;
-    text-align: center;
-    line-height: 1.2;
-    //border: 1px solid #cacaca;
-    width: 20.25em;
+// .textlogo {
+//     color: $body-font-color;
+//     display: inline-block;
+//     font-size: 1.25em;
+//     text-transform: uppercase;
+//     font-weight: $fw-bold;
+//     text-align: center;
+//     line-height: 1.2;
+//     //border: 1px solid #cacaca;
+//     // width: 20.25em;
 
-    span {
-        display: block;
-        font-weight: $fw-normal;
-        font-size: 0.75em;
-    }
-}
+//     span {
+//         display: block;
+//         font-weight: $fw-normal;
+//         font-size: 0.62em;
+//     }
+// }
 
 .banner__nav {
     flex-grow: 2;
@@ -50,7 +54,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    font-size: .875rem;
+    font-size: 1rem;
 
     @include breakpoint(large) {
         font-size: 1.125rem;
@@ -60,16 +64,23 @@
         margin: 0 1%;
 
         @include breakpoint(large) {
-            margin: 0 1.5%;
+            margin: 0 1%;
         }
 
         a {
             display: inline-block;
-            padding: 0.25em 0.25em;
+            padding: 0.333em 0.25em;
             white-space: nowrap;
             color: inherit;
             text-transform: uppercase;
             line-height: 1;
+            @include breakpoint(large) {
+                padding: 0.25em 0.25em;
+            }
+        }
+
+        &.active a {
+            font-weight: $fw-bold;
         }
     }
 }
@@ -79,10 +90,10 @@
     font-weight: $fw-bold;
     font-size: 1.125em;
     font-feature-settings: "lnum" 1;
-    margin-top: 0.5em;
+    margin: 0.5em 0;
 
-    @include breakpoint($bp-tablet) {
-        margin-top: 0;
+    @include breakpoint($bp-large) {
+        margin: 0;
     }
 
     .icon {
