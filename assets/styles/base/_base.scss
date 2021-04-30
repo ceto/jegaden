@@ -22,6 +22,10 @@ html {
     max-width: $layout-content * 0.666;
 }
 
+.grid-container--xxnarrow {
+    max-width: $layout-content * 0.5;
+}
+
 .entry-content-asset {
     position: relative;
     height: 0;

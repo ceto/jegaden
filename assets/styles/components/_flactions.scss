@@ -10,10 +10,11 @@
     justify-content: center;
     line-height: 1;
     text-transform: uppercase;
-    font-size: 0.875rem;
+    font-size: 1rem;
     //font-feature-settings: "lnum" 1;
 
     @include breakpoint(large) {
+        font-size: 1.2rem;
         left: auto;
         right: 0;
         bottom: auto;
@@ -26,9 +27,9 @@
 
     a {
         color: #fff;
-        background-color: $cl-bluedark;
+        background-color: $cl-bluehard;
         display: inline-block;
-        padding: 0.875em 0.875em 0.666em;
+        padding: 0.875em 0.875em 0.5em;
         font-weight: $global-weight-bold;
         //width: 49.5%;
         margin: 0 0.125em;
@@ -37,14 +38,17 @@
 
         &:hover,
         &:focus {
-            background-color: $cl-blue;
+            background-color: $cl-bluedark;
         }
 
         .icon {
             fill: currentColor;
-            stroke: currentcolor;
+            // stroke: currentcolor;
             width: 1em;
             height: 1em;
+            @include breakpoint(large) {
+                transform: rotate(90deg) scale(1.333);
+            }
         }
 
         span {

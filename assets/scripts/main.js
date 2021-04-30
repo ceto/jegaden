@@ -587,6 +587,13 @@ $("#contact_form").on("submit", function(ev, frm) {
     var user_tel = $("input[name=message_tel]").val();
     var user_msg = $("textarea[name=message_text]").val();
 
+    var user_topic= '';
+    var user_topicarray = [];
+    $.each($('input[name="message_topic[]"]:checked'), function(){
+        user_topicarray.push($(this).val());
+    });
+    user_topic+=user_topicarray.join(' | ');
+
     var proceed = true;
     if (user_name === "") {
         proceed = false;
@@ -610,6 +617,7 @@ $("#contact_form").on("submit", function(ev, frm) {
             userName: user_name,
             userEmail: user_email,
             userTel: user_tel,
+            userTopic: user_topic,
             userMsg: user_msg
         };
         $("#contact_submit").addClass("disabled");
