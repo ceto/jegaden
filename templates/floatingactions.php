@@ -5,7 +5,7 @@
         </svg>
         <!-- <span>E-mail</span> -->
     </a>
-    <a target="_blank" href="https://wa.me/9710581682607">
+    <a target="_blank" href="https://wa.me/971589258515">
         <svg class="icon">
             <use xlink:href="#icon-whatsapp-b"></use>
         </svg>
